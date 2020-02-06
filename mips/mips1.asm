@@ -41,6 +41,10 @@ check:
 	blt $t3, 10, check
 	
 #end of check
+	li $v0, 34
+	addi $a0, $t2, 0
+	syscall
+
 	li $t4, 0
 	li $t5, 0
 	srl $t4, $t2, 16
